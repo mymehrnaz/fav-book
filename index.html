@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my hobby-Reading Books</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .dark body{
+            background-color: rgb(84, 83, 81);
+        }
+        img{
+            max-width: 100%;
+        }
+        .chi{
+            max-width: 100%;
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .chi:hover{
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+
+.theme-button{
+    border: 2px solid rgb(23, 23, 23);
+    padding: 12px 18px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.theme-button:hover{
+    color: white;
+    background-color: black;
+}
+h1,h2{
+    text-align: center;
+}
+.man{
+margin: 0 auto;
+border-radius: 10px;
+background-color: cornflowerblue;
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+.dark p{
+    color: aliceblue;
+}
+.bit{
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+}
+.grid{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.grid img {
+    width: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 150ms ease-in-out;
+}
+.grid img:hover{
+    transform: scale(2);
+}
+.sia{
+    background-color: rgb(72, 69, 65);
+    color: white;
+}
+.dark .man{
+background: rgb(36, 37, 39);
+} 
+.dark a{
+    color: aliceblue;
+} 
+.fib{
+    margin-top: 8px;
+} 
+.adres{
+    text-decoration: none;
+} 
+</style>
+</head>
+<body class="sia">
+  <button type="button" class="theme-button">Dark theme</button> 
+  <div class="man">
+  <h1>Reading Books 📖</h1> 
+  <h2>My favorite hobby</h2>
+  <div class="image-galllery">
+  <a href="https://thegreatestbooks-org.webpkgcache.com/doc/-/s/thegreatestbooks.org/" target="_blank">  <img src="./book-1.jpg" alt="" class="chi"></a>
+    <div class="grid">
+       <img src="./book-6.jpg" alt="">
+          <img src="./book-4.jpg" alt="">
+             <img src="./book-3.jpg" alt="">
+                <img src="./book-8.jpg" alt="">
+                   <img src="./book-2.jpg" alt="">
+                   <img src="./book-7.jpg" alt="">
+                   <img src="./book-5.jpg" alt="">
+                   <img src="./book-9.jpg" alt="" class="fib">
+    </div>
+  </div>
+  <p>Reading books is a very popular and rewarding hobby.<br/> It offers numerous benefits, including expanding knowledge,<br/> improving cognitive skills, and providing entertainment and relaxation.<br/> It's a relatively inexpensive hobby that can be enjoyed anywhere and at any pace. 
+</p>
+<a href="https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html" target="_blank"><button type="button" class="bit">Learn More</button></a>
+  </div>
+<p>Coded by <a href="mailto:mehrnazsadeghian8968@gmail.com" target="_blank" class="adres">Mehrnaz Sadeghian</a></p>
+<script>
+          function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+</script>
+</body>
+</html>
